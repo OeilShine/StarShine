@@ -2,26 +2,28 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import axios from 'axios'
+
+Vue.config.productionTip = false
 Vue.prototype.axios=axios;
 
-import { Tabbar, TabbarItem } from 'vant';
-import { NavBar } from 'vant';
-
+// weather page
+import { Tabbar, TabbarItem, NavBar, Swipe, SwipeItem} from "vant";
 Vue.use(Tabbar);
 Vue.use(TabbarItem);
 Vue.use(NavBar);
+Vue.use(Swipe);
+Vue.use(SwipeItem);
 
-Vue.config.productionTip = false
+// Constellation page
+import { NoticeBar } from 'vant'
+Vue.use(NoticeBar);
+
+// Robot page
+import { Button , Overlay } from 'vant';
+Vue.use(Button);
+Vue.use(Overlay);
 
 new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
-
-
-// axios({
-//   url: "/swiper_api?key=fab2bc2dafd597e1be4ae6740b1339a4&men=巨蟹&women=射手",
-//   method: "post",
-// }).then((res) => {
-//   console.log(res);
-// });

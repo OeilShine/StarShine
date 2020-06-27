@@ -1,13 +1,19 @@
 <template>
-    <div>
-<van-nav-bar title="机器人" />
-    </div>
+  <div>
+    <van-nav-bar title="机器人" />
+    <Overlay/>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "Robot"
-    }
+import Overlay from '@/components/overlay/Overlay '
+
+export default {
+  name: "Robot",
+  components: {
+      Overlay
+  }
+};
 </script>
 
 <style scoped>
