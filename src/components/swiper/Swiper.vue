@@ -25,7 +25,7 @@ export default {
   },
   created() {
     getSwiperData().then(res => {
-      console.log(res.images);
+      // console.log(res.images);
       this.images = res.images;
     });
   }

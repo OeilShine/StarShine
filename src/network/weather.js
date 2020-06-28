@@ -17,7 +17,7 @@ export function getWeatherData(city) {
     url: "/api/simpleWeather/query",
     params: {
       key: "0677eaae7788e0028adde89038823c79",
-      city,
+      city: "西宁"
     },
   });
 }

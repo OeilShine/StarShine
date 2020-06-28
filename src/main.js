@@ -7,12 +7,15 @@ Vue.config.productionTip = false
 Vue.prototype.axios=axios;
 
 // weather page
-import { Tabbar, TabbarItem, NavBar, Swipe, SwipeItem} from "vant";
+import { Tabbar, TabbarItem, NavBar, Swipe, SwipeItem, Collapse, CollapseItem, Search } from "vant";
 Vue.use(Tabbar);
 Vue.use(TabbarItem);
 Vue.use(NavBar);
 Vue.use(Swipe);
 Vue.use(SwipeItem);
+Vue.use(Collapse);
+Vue.use(CollapseItem);
+Vue.use(Search);
 
 // Constellation page
 import { NoticeBar, Grid, GridItem,  Image as VanImage, Rate } from 'vant'
