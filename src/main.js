@@ -15,13 +15,16 @@ Vue.use(Swipe);
 Vue.use(SwipeItem);
 
 // Constellation page
-import { NoticeBar } from 'vant'
+import { NoticeBar, Grid, GridItem,  Image as VanImage, Rate } from 'vant'
 Vue.use(NoticeBar);
+Vue.use(Grid);
+Vue.use(GridItem);
+Vue.use(VanImage);
+Vue.use(Rate);
 
 // Robot page
-import { Button , Overlay } from 'vant';
+import { Button } from 'vant';
 Vue.use(Button);
-Vue.use(Overlay);
 
 new Vue({
   router,

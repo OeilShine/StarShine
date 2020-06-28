@@ -20,7 +20,7 @@
         </template>
       </van-tabbar-item>
       <van-tabbar-item replace to="/robot" icon="setting-o">
-        <span>机器人</span>
+        <span>许愿</span>
         <template #icon="props">
           <img :src="props.active ? icon.active.robot_active : icon.inactive.robot" />
         </template>

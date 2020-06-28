@@ -21,9 +21,9 @@ export default {
     Swiper
   },
   created() {
-    getWeatherData(this.city).then(res => {
-      console.log(res);
-    });
+    // getWeatherData(this.city).then(res => {
+    //   console.log(res);
+    // });
   }
 };
 </script>

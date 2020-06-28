@@ -3,17 +3,23 @@
     <van-nav-bar title="天问" />
     <van-notice-bar
       left-icon="volume-o"
-      text="Welcome to the Galactic world."
+      text="考试必过！考试必过！考试必过！"
       color="#1989fa"
       background="#ECF9FF"
       scrollable
     />
+    <con-grid />
   </div>
 </template>
 
 <script>
+import ConGrid from '@/components/congrid/ConGrid'
+
 export default {
-  name: "Constellation"
+  name: "Constellation",
+  components: {
+    ConGrid
+  }
 };
 </script>
 
@@ -21,4 +27,5 @@ export default {
 .van-nav-bar {
   background: #6162bc;
 }
+
 </style>

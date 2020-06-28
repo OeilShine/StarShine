@@ -1,17 +1,14 @@
 <template>
   <div>
-    <van-nav-bar title="机器人" />
-    <Overlay/>
+    <van-nav-bar title="许愿墙" />
   </div>
 </template>
 
 <script>
-import Overlay from '@/components/overlay/Overlay '
 
 export default {
   name: "Robot",
   components: {
-      Overlay
   }
 };
 </script>
