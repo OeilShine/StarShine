@@ -73,7 +73,7 @@ export default {
   methods: {
     getWeatherData() {
       getWeatherData(this.city).then(res => {
-        console.log(res);
+        // console.log(res);
         this.realtime = res.result.realtime;
         this.future = res.result.future;
       });

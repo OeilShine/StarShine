@@ -13,7 +13,7 @@
       </li>
     </ul>
 
-    <van-field v-model="info" label="文本" left-icon="music-o" placeholder="分享你的趣事">
+    <van-field v-model="info" label="许愿" left-icon="music-o" placeholder="分享你的趣事">
       <template #button>
         <van-button size="small" type="primary" @click="getAskData()">发送</van-button>
       </template>
@@ -39,8 +39,8 @@ export default {
     getAskData() {
       getAskData(this.info).then(res => {
         this.result.text.push(res.result.text);
-        console.log(res);
-        console.log(res.result.text);
+        // console.log(res);
+        // console.log(res.result.text);
       });
       this.ask_info.push(this.info)
       this.info = ''

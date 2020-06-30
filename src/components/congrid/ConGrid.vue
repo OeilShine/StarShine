@@ -65,6 +65,8 @@
 </template>
 
 <script>
+import { Dialog } from "vant";
+
 import { getConstellationData } from "@/network/constellation";
 
 export default {

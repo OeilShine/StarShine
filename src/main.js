@@ -18,15 +18,16 @@ Vue.use(CollapseItem);
 Vue.use(Search);
 
 // Constellation page
-import { NoticeBar, Grid, GridItem,  Image as VanImage, Rate } from 'vant'
+import { NoticeBar, Grid, GridItem,  Image as VanImage, Rate, ActionSheet  } from 'vant'
 Vue.use(NoticeBar);
 Vue.use(Grid);
 Vue.use(GridItem);
 Vue.use(VanImage);
 Vue.use(Rate);
+Vue.use(ActionSheet);
 
 // Robot page
-import { Button,Field,} from 'vant';
+import { Button,Field} from 'vant';
 Vue.use(Button);
 Vue.use(Field);
 
