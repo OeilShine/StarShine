@@ -26,8 +26,10 @@ Vue.use(VanImage);
 Vue.use(Rate);
 
 // Robot page
-import { Button } from 'vant';
+import { Button,Field,} from 'vant';
 Vue.use(Button);
+Vue.use(Field);
+
 
 new Vue({
   router,

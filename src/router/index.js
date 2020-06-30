@@ -3,7 +3,6 @@ import VueRouter from "vue-router";
 
 const Weather = () => import("../views/weather/Weather");
 const Constellation = () => import("../views/constellation/Constellation");
-const Cookbook = () => import("../views/cookbook/Cookbook");
 const Robot = () => import("../views/robot/Robot");
 
 Vue.use(VueRouter);
@@ -20,10 +19,6 @@ const routes = [
   {
     path: "/constellation",
     component: Constellation,
-  },
-  {
-    path: "/cookbook",
-    component: Cookbook,
   },
   {
     path: "/robot",

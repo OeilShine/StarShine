@@ -17,7 +17,17 @@ export function getWeatherData(city) {
     url: "/api/simpleWeather/query",
     params: {
       key: "0677eaae7788e0028adde89038823c79",
-      city: "西宁"
+      city
+    },
+  });
+}
+
+export function getAskData(info) {
+  return request({
+    url: "/ask_api/Tuling/Ask",
+    params: {
+      key: "28c2a0ff23fa4e9296b41a98f196b546",
+      info
     },
   });
 }

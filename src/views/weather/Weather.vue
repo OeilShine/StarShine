@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
 .van-nav-bar {
-  background: #6162bc;
+  background: #DEF2FA;
 }
 </style>
 
